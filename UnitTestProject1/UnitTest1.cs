@@ -43,6 +43,13 @@ namespace UnitTestProject1
             _driver.FindElement(By.ClassName("ico-login")).Click();
             NUnit.Framework.Assert.AreEqual(_driver.Title, "Demo Web Shop. Login");
         }
+
+        [TestCategory("NotReady")]
+        [TestMethod]
+        public void VerifyHomePageTitle()
+        {
+            NUnit.Framework.Assert.AreEqual(_driver.Title, "Demo Webshop");
+        }
         [TestCleanup]
         public void TearDown()
         {
