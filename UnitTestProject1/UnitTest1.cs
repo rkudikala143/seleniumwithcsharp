@@ -44,7 +44,7 @@ namespace UnitTestProject1
             NUnit.Framework.Assert.AreEqual(_driver.Title, "Demo Web Shop. Login");
         }
 
-        [TestCategory("NotReady")]
+        [TestCategory("Smoke")]
         [TestMethod]
         public void VerifyHomePageTitle()
         {
